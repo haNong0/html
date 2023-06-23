@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  #wrapper {
+    width: 600px;
+    display: grid;       
+    /* 그리드 컨테이너를 지정 */
+    grid-template-columns: repeat(3, 1fr);
+    /* 너비가 같은 컬림 3개 */
+    grid-auto-rows: minmax(100px, auto);
+    /* 행 높이가 최소 100px */
+  } 
+  .items {
+    padding: 10px;
+    background-color: aqua;
+  } 
+  .items:nth-child(odd) {
+    background-color: greenyellow;
+  }
+</style>
+
+<body>
+  <div id="wrapper">
+    <div class="items">
+      The example above is fine if the web page only contains two columns.
+      The example above is fine if the web page only contains two columns.
+      The example above is fine if the web page only contains two columns.
+    </div>
+    <div class="items">
+      The example above is fine if the web page only contains two columns.
+      The example above is fine if the web page only contains two columns.
+      The example above is fine if the web page only contains two columns.
+    </div>
+    <div class="items">
+      The example above is fine if the web page only contains two columns.
+      The example above is fine if the web page only contains two columns.
+      The example above is fine if the web page only contains two columns.
+    </div>
+    <div class="items">
+      The example above is fine if the web page only contains two columns.
+      The example above is fine if the web page only contains two columns.
+      The example above is fine if the web page only contains two columns.
+    </div>
+    <div class="items">
+      The example above is fine if the web page only contains two columns.
+      The example above is fine if the web page only contains two columns.
+      The example above is fine if the web page only contains two columns.
+    </div>
+    
+  </div>
+</body>
+</html>

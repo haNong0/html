@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  #wrapper1 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax 200px, 1fr);
+    /* 화면을 꽉 채우는 컬럼의 넓이 폭 */
+  }
+  #wrapper2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax 200px, 1fr);
+    /* 컬럼의 최소 너비만큼 표시 */
+  }
+    h1{
+      font-size: 24px;
+    }
+    .items {
+      padding: 15px;
+      background-color: green;
+    }
+    .items:nth-child(odd) {
+      background-color: aqua;
+      
+    }
+
+</style>
+
+<body>
+  <h1>auto-fit일 경우</h1>
+  <div id="wrapper">
+    <div class="items">
+      The example above is fine if the web page only contains two columns.
+      The example above is fine if the web page only contains two columns.
+      The example above is fine if the web page only contains two columns.
+    </div>
+    <div class="items">
+      The example above is fine if the web page only contains two columns.
+      The example above is fine if the web page only contains two columns.
+      The example above is fine if the web page only contains two columns.
+    </div>
+    <div class="items">
+      The example above is fine if the web page only contains two columns.
+      The example above is fine if the web page only contains two columns.
+      The example above is fine if the web page only contains two columns.
+    </div>
+    <div class="items">
+      The example above is fine if the web page only contains two columns.
+      The example above is fine if the web page only contains two columns.
+      The example above is fine if the web page only contains two columns.
+    </div>
+    <div class="items">
+      The example above is fine if the web page only contains two columns.
+      The example above is fine if the web page only contains two columns.
+      The example above is fine if the web page only contains two columns.
+    
+  </div>
+  <h1>auto-fill일 경우</h1>
+  <div id="wrapper2">
+    <div class="items">
+      The example above is fine if the web page only contains two columns.
+      The example above is fine if the web page only contains two columns.
+      The example above is fine if the web page only contains two columns.
+    </div>
+    <div class="items">
+      The example above is fine if the web page only contains two columns.
+      The example above is fine if the web page only contains two columns.
+      The example above is fine if the web page only contains two columns.
+    </div>
+    <div class="items">
+      The example above is fine if the web page only contains two columns.
+      The example above is fine if the web page only contains two columns.
+      The example above is fine if the web page only contains two columns.
+    </div>
+    <div class="items">
+      The example above is fine if the web page only contains two columns.
+      The example above is fine if the web page only contains two columns.
+      The example above is fine if the web page only contains two columns.
+    </div>
+    <div class="items">
+      The example above is fine if the web page only contains two columns.
+      The example above is fine if the web page only contains two columns.
+      The example above is fine if the web page only contains two columns.
+    
+  </div>
+</body>
+</html>
